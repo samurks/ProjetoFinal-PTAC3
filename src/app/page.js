@@ -8,15 +8,15 @@ export default function Home() {
 
   return (
     <main>
-      {listaFilmes.map((listaFilmes) => (
+      {listaFilmes.map((filmes) => (
         <Main
-          key={listaFilmes.id}
-          imagemUrl={listaFilmes.imagem_url}
-          nomeFilme={listaFilmes.nome}
-          genero={listaFilmes.genero}
+          key={filmes.id}
+          imagemUrl={filmes.imagem_url}
+          nomeFilme={filmes.nome}
+          genero={filmes.genero}
         />
       ))
-      };
+      }
     </main>
   );
 };
