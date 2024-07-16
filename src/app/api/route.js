@@ -113,54 +113,6 @@ export const listaFilmes = [
     imagem_url: "https://m.media-amazon.com/images/I/81wByEaQrlL._AC_SY879_.jpg",
     url_filme: "https://www.imdb.com/title/tt0167261/"
   },
-  {
-    id: 17,
-    nome: "Se7en",
-    genero: "Crime, Drama, Mistério",
-    imagem_url: "https://upload.wikimedia.org/wikipedia/pt/thumb/2/27/Seven_1995.jpg/512px-Seven_1995.jpg"
-  },
-  {
-    id: 18,
-    nome: "Gladiator",
-    genero: "Ação, Aventura, Drama",
-    imagem_url: "https://m.media-amazon.com/images/I/51cV7a82q+L._AC_SY300_SX300_.jpg"
-  },
-  {
-    id: 19,
-    nome: "Titanic",
-    genero: "Drama, Romance",
-    imagem_url: "https://m.media-amazon.com/images/I/619sVTc1mwL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
-  },
-  {
-    id: 20,
-    nome: "Braveheart",
-    genero: "Biografia, Drama, História",
-    imagem_url: "https://m.media-amazon.com/images/I/719f8nWVRnL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
-  },
-  {
-    id: 21,
-    nome: "The Departed",
-    genero: "Crime, Drama, Thriller",
-    imagem_url: "https://m.media-amazon.com/images/I/71JMspdKpAL.jpg"
-  },
-  {
-    id: 22, 
-    nome: "The Usual Suspects",
-    genero: "Crime, Drama, Mistério",
-    imagem_url: "https://upload.wikimedia.org/wikipedia/pt/thumb/4/43/UsualSuspects1995.jpg/512px-UsualSuspects1995.jpg"
-  },
-  { 
-    id: 23,
-    nome: "The Lion King",
-    genero: "Animação, Aventura, Drama",
-    imagem_url: "https://cdn.culturagenial.com/imagens/lionkingposter-cke.jpg"
-  },
-  {
-    id: 24,
-    nome: "The Sixth Sense",
-    genero: "Drama, Mistério, Suspense",
-    imagem_url: "https://image.tmdb.org/t/p/w300_and_h450_bestv2/4AfSDjjCy6T5LA1TMz0Lh2HlpRh.jpg"
-  },
 ];
   export async function GET() {
       return NextResponse.json(listaFilmes);
