@@ -1,0 +1,67 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #141414;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #202020;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imageSection {
+  width: 100%;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.detailsSection {
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.genre {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #46d369;
+}
+
+.synopsis {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.watchButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #464646;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.watchButton:hover {
+  background-color: #e50914;
+}

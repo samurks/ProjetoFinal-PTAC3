@@ -3,6 +3,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Loading from "./Loading";
 import ErroFetch from "./ErroFecth";
+import Link from "next/link";
+import styles from "../styles/main.module.css";
 
 export default function Main() {
   const [listaFilmes, setFilmes] = useState([]);
@@ -31,14 +33,20 @@ export default function Main() {
   }
   
   return (
-    <main>
-      {listaFilmes.map((filmes) => (
-        <div key={filmes.id}>
-          <img src={filmes.imagem_url} />
-          <h2>{filmes.nome}</h2>
-          <p>{filmes.genero}</p>
-        </div>
-      ))}
+    <main className={styles.main}>
+      <div className={styles.grid}>
+        {listaFilmes.map((filme) => (
+          <div className={styles.card} key={filme.id}>
+            <Link href={"/filme/" + filme.id}>
+              <img className={styles.image} src={filme.imagem_url} alt={filme.nome} />
+              <div className={styles.cardDetails}>
+                <h2 className={styles.title}>{filme.nome}</h2>
+                <p className={styles.genre}>{filme.genero}</p>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </div>
     </main>
   );
 }
