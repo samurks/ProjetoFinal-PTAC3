@@ -35,16 +35,16 @@ export default function Main() {
   }, [])
 
   const filtrarFilmes = (texto, genero) => {
-    let novaLista = listaToda.filter((filme) =>
+    let newList = listaToda.filter((filme) =>
       filme.nome.toUpperCase().includes(texto.toUpperCase().trim())
     );
 
     if (genero !== "Todos") {
-      novaLista = novaLista.filter((filme) =>
+      newList = newList.filter((filme) =>
         filme.genero.includes(genero)
       );
     }
-    setFilmes(novaLista);
+    setFilmes(newList);
   };
 
   const selecionarGenero = (genero) => {
