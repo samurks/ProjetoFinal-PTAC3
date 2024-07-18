@@ -84,7 +84,7 @@ export const listaFilmes = [
   {
     id: 11,
     nome: "The Silence of the Lambs",
-    genero: "Crime, Drama, Thriller",
+    genero: "Crime, Drama",
     imagem_url: "https://m.media-amazon.com/images/I/61806LSjYhL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     url_filme: "https://www.imdb.com/title/tt0102926/",
     sinopse: "Uma jovem agente do FBI busca a ajuda de um brilhante mas perigoso psiquiatra canibal para capturar outro serial killer."

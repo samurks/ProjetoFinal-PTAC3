@@ -43,13 +43,37 @@
   color: #ffffff;
 }
 
-.searchcontainer {
+.filterContainer {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.searchinput {
-  padding: 5px;
+.searchContainer {
+  flex: 1;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
   font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+.dropdownContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #333;
+  color: #fff;
 }

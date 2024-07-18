@@ -13,6 +13,8 @@ export default function Main() {
   const [erro, setErro] = useState(false);
   const [listaToda, setListaToda] = useState([]);
   const [textSearch, setTextSearch] = useState("");
+  const [generoFiltro, setGeneroFiltro] = useState("Todos");
+  const [generos, setGeneros] = useState([]);
 
   useEffect(() => {
     const getFilmes = async () => {
@@ -21,6 +23,9 @@ export default function Main() {
       const data = await response.json();
       setFilmes(data);
       setListaToda(data);
+      const listaGeneros = data.map(filme => filme.genero).join(', ').split(', ');
+      const generoUnico = ["Todos", ...new Set(listaGeneros)];
+      setGeneros(generoUnico);
     }
     catch{
       setErro(true)
@@ -29,16 +34,31 @@ export default function Main() {
     getFilmes()
   }, [])
 
+  const filtrarFilmes = (texto, genero) => {
+    let novaLista = listaToda.filter((filme) =>
+      filme.nome.toUpperCase().includes(texto.toUpperCase().trim())
+    );
+
+    if (genero !== "Todos") {
+      novaLista = novaLista.filter((filme) =>
+        filme.genero.includes(genero)
+      );
+    }
+    setFilmes(novaLista);
+  };
+
+  const selecionarGenero = (genero) => {
+    setGeneroFiltro(genero);
+    filtrarFilmes(textSearch, genero);
+  };
+
   const search = (text) => {
     setTextSearch(text);
+    filtrarFilmes(text, generoFiltro);
     if (text === "") {
       setFilmes(listaToda);
       return;
     }
-    const newList = listaToda.filter((filme) =>
-      filme.nome.toUpperCase().includes(text.toUpperCase().trim())
-    );
-    setFilmes(newList);
   };
 
 
@@ -52,14 +72,30 @@ export default function Main() {
 
   return (
     <main className={styles.main}>
-       <div className={styles.searchcontainer}>
+  <div className={styles.filterContainer}>
+        <div className={styles.searchContainer}>
           <input
             type="text"
             value={textSearch}
             onChange={(event) => search(event.target.value)}
-            className={styles.searchinput}
+            className={styles.searchInput}
+            placeholder="Search for movies..."
           />
         </div>
+        <div className={styles.dropdownContainer}>
+          <select
+            value={generoFiltro}
+            onChange={(e) => selecionarGenero(e.target.value)}
+            className={styles.dropdown}
+          >
+            {generos.map((genero, index) => (
+              <option key={index} value={genero}>
+                {genero}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
       <div className={styles.grid}>
         {listaFilmes.map((filme) => (
           <div className={styles.card} key={filme.id}>
