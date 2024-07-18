@@ -1,3 +1,5 @@
+import Footer from "./components/Footer.js"
+
 
 export const metadata = {
   title: "Create Next App",
@@ -9,6 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
       <body>
           {children}
+          <Footer/>
       </body>
     </html>
   );

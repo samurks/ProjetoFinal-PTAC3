@@ -79,7 +79,7 @@ export default function Main() {
             value={textSearch}
             onChange={(event) => search(event.target.value)}
             className={styles.searchInput}
-            placeholder="Search for movies..."
+            placeholder="Pesquisar filmes..."
           />
         </div>
         <div className={styles.dropdownContainer}>

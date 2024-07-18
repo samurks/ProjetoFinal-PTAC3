@@ -1,5 +1,5 @@
 .main {
-  padding: 20px;
+  padding: 40px;
   background-color: #141414;
   color: #ffffff;
 }
@@ -46,7 +46,8 @@
 .filterContainer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .searchContainer {

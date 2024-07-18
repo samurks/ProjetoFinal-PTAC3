@@ -2,10 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   background-color: #141414;
   color: #ffffff;
-  padding: 20px;
+  padding: 10px;
 }
 
 .card {
@@ -14,7 +13,7 @@
   background-color: #202020;
   border-radius: 8px;
   overflow: hidden;
-  max-width: 500px;
+  max-width: 420px;
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -27,8 +26,7 @@
 .image {
   width: 100%;
   height: auto;
-  display: block;
-}
+} 
 
 .detailsSection {
   padding: 20px;
