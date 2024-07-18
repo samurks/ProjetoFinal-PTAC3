@@ -43,4 +43,13 @@
   color: #ffffff;
 }
 
+.searchcontainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+.searchinput {
+  padding: 5px;
+  font-size: 16px;
+}
