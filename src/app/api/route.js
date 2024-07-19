@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 export const listaFilmes = [
   {
@@ -100,7 +100,7 @@ export const listaFilmes = [
   {
     id: 13,
     nome: "Schindler's List",
-    genero: "Biografia, Drama, História",
+    genero: "Biografia, Drama",
     imagem_url: "https://m.media-amazon.com/images/I/71EtVRky4eL._AC_SY879_.jpg",
     url_filme: "https://www.imdb.com/title/tt0108052/",
     sinopse: "A história real de Oskar Schindler, que salvou milhares de judeus durante o Holocausto ao empregá-los em sua fábrica."
@@ -129,7 +129,104 @@ export const listaFilmes = [
     url_filme: "https://www.imdb.com/title/tt0167261/",
     sinopse: "Frodo e Sam continuam sua jornada para Mordor enquanto seus amigos lutam para proteger a Terra Média do crescente poder de Sauron."
   },
+  {
+    id: 17,
+    nome: "Inglourious Basterds",
+    genero: "Ação, Aventura, Drama",
+    imagem_url: "https://upload.wikimedia.org/wikipedia/en/c/c3/Inglourious_Basterds_poster.jpg",
+    url_filme: "https://www.imdb.com/title/tt0361748/",
+    sinopse: "No primeiro ano de ocupação alemã na França, uma jovem refugiada judaica testemunha a execução de sua família pelas mãos do coronel nazista Hans Landa."
+  },
+  {
+    id: 18,
+    nome: "Jurassic Park",
+    genero: "Aventura, Ficção Científica",
+    imagem_url: "https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg",
+    url_filme: "https://www.imdb.com/title/tt0107290/",
+    sinopse: "Um parque temático habitado por dinossauros criados a partir de DNA antigo é ameaçado quando uma falha no sistema de segurança libera os predadores."
+  },
+  {
+    id: 19,
+    nome: "The Prestige",
+    genero: "Drama, Mistério, Ficção Científica",
+    imagem_url: "https://upload.wikimedia.org/wikipedia/en/d/d2/Prestige_poster.jpg",
+    url_filme: "https://www.imdb.com/title/tt0482571/",
+    sinopse: "Após um trágico acidente, dois mágicos se tornam ferozes rivais e competem para criar a melhor ilusão, sacrificando tudo o que têm para superar o outro."
+  },
+  {
+    id: 20,
+    nome: "Se7en",
+    genero: "Crime, Drama, Mistério",
+    imagem_url: "https://upload.wikimedia.org/wikipedia/en/6/68/Seven_%28movie%29_poster.jpg",
+    url_filme: "https://www.imdb.com/title/tt0114369/",
+    sinopse: "Dois detetives, um novato e outro prestes a se aposentar, caçam um serial killer que usa os sete pecados capitais como motivo para seus crimes."
+  },
+  {
+    id: 21,
+    nome: "Avatar",
+    genero: "Ação, Aventura, Ficção Científica",
+    imagem_url: "https://upload.wikimedia.org/wikipedia/en/d/d6/Avatar_%282009_film%29_poster.jpg",
+    url_filme: "https://www.imdb.com/title/tt0499549/",
+    sinopse: "Um marine paraplégico enviado à lua Pandora em uma missão única se vê dividido entre seguir suas ordens e proteger o mundo que sente ser sua casa."
+  },
+  {
+    id: 22,
+    nome: "Braveheart",
+    genero: "Biografia, Drama",
+    imagem_url: "https://upload.wikimedia.org/wikipedia/en/5/55/Braveheart_imp.jpg",
+    url_filme: "https://www.imdb.com/title/tt0112573/",
+    sinopse: "Quando sua esposa é executada por agressores ingleses, William Wallace inicia uma revolta contra o rei inglês em uma busca apaixonada pela liberdade."
+  },
+  {
+    id: 23,
+    nome: "Star Wars: Episode IV - A New Hope",
+    genero: "Ação, Aventura, Fantasia",
+    imagem_url: "https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg",
+    url_filme: "https://www.imdb.com/title/tt0076759/",
+    sinopse: "Luke Skywalker se junta a um cavaleiro Jedi, um contrabandista, um Wookiee e dois dróides para salvar a galáxia da estação espacial destruidora do Império."
+  },
+  {
+    id: 24,
+    nome: "Saving Private Ryan",
+    genero: "Drama, Guerra",
+    imagem_url: "https://upload.wikimedia.org/wikipedia/en/a/ac/Saving_Private_Ryan_poster.jpg",
+    url_filme: "https://www.imdb.com/title/tt0120815/",
+    sinopse: "Durante a invasão da Normandia na Segunda Guerra Mundial, um grupo de soldados é enviado para trás das linhas inimigas para resgatar um paraquedista cujo irmão foi morto em combate."
+  },
+  {
+    id: 25,
+    nome: "The Lion King",
+    genero: "Aventura, Drama",
+    imagem_url: "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
+    url_filme: "https://www.imdb.com/title/tt0110357/",
+    sinopse: "Um jovem leão foge de seu reino após a morte de seu pai, mas aprende o verdadeiro significado da responsabilidade e bravura."
+  },
+  {
+    id: 26,
+    nome: "The Departed",
+    genero: "Crime, Drama",
+    imagem_url: "https://upload.wikimedia.org/wikipedia/en/5/50/Departed234.jpg",
+    url_filme: "https://www.imdb.com/title/tt0407887/",
+    sinopse: "Um policial disfarçado e uma toupeira na polícia tentam se identificar enquanto se infiltram em uma gangue irlandesa em Boston."
+  },
+  {
+    id: 27,
+    nome: "Whiplash",
+    genero: "Drama, Música",
+    imagem_url: "https://upload.wikimedia.org/wikipedia/en/0/01/Whiplash_poster.jpg",
+    url_filme: "https://www.imdb.com/title/tt2582802/",
+    sinopse: "Um jovem baterista ambicioso se matricula em um conservatório de música de elite, onde seus sonhos de grandeza são orientados por um instrutor impiedoso."
+  },
+  {
+    id: 28,
+    nome: "La La Land",
+    genero: "Drama, Música",
+    imagem_url: "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png",
+    url_filme: "https://www.imdb.com/title/tt3783958/",
+    sinopse: "Enquanto perseguem seus sonhos em Los Angeles, um pianista de jazz e uma atriz aspirante se apaixonam, mas enfrentam desafios à medida que suas carreiras decolam."
+  }
 ];
+
 export async function GET() {
   return NextResponse.json(listaFilmes);
 }

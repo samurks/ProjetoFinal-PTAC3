@@ -88,8 +88,8 @@ export default function Main() {
             onChange={(e) => selecionarGenero(e.target.value)}
             className={styles.dropdown}
           >
-            {generos.map((genero, index) => (
-              <option key={index} value={genero}>
+            {generos.map((genero, genre) => (
+              <option key={genre} value={genero}>
                 {genero}
               </option>
             ))}
@@ -100,7 +100,7 @@ export default function Main() {
         {listaFilmes.map((filme) => (
           <div className={styles.card} key={filme.id}>
             <Link href={"/filme/" + filme.id}>
-              <img className={styles.image} src={filme.imagem_url} alt={filme.nome} />
+              <Image className={styles.image} src={filme.imagem_url} width={350} height={525}/>
               <div className={styles.cardDetails}>
                 <h2 className={styles.title}>{filme.nome}</h2>
                 <p className={styles.genre}>{filme.genero}</p>

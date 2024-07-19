@@ -8,9 +8,9 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <p> Todos os direitos reservados &copy; 2024</p>
-        <nav className={styles.footerNav}>
+        <div className={styles.footerNav}>
           <Link href="https://github.com/samurks/" target="_blank">GitHub</Link>
-        </nav>
+        </div>
       </div>
     </footer>
   );
