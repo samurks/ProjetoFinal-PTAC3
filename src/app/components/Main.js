@@ -86,8 +86,8 @@ export default function Main() {
             onChange={(e) => selecionarGenero(e.target.value)}
             className={styles.dropdown}
           >
-            {generos.map((genero, genre) => (
-              <option key={genre} value={genero}>
+            {generos.map((genero) => (
+              <option key={genero} value={genero}>
                 {genero}
               </option>
             ))}
